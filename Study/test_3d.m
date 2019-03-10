@@ -1,0 +1,16 @@
+n=30;
+a=linspace(-50,50);
+z=linspace(-50,0);
+[a,z]=meshgrid(a,z);
+x=z.-a;
+y=z.+a;
+surf(x,y,z);
+axis equal;
+hold on;
+a=linspace(-50,50);
+z=linspace(-50,0);
+[a,z]=meshgrid(a,z);
+x=z.+a;
+y=z.-a;
+surf(x,y,z);
+axis equal;
